@@ -1,0 +1,443 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:900&display=swap" rel="stylesheet"> 
+
+<head>
+	
+
+	<title>Mayurh</title>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</head>
+
+<style type="text/css">
+	
+	body{
+		margin: 0%;
+		font-family: 'Raleway', sans-serif;
+	}
+	nav{
+
+	}
+	ul{
+		padding-left: 0;
+		text-decoration: none;
+		
+	}
+	li{
+		list-style: none;
+	}
+	
+	#portfolio-main{ 
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+	 }
+	#navbar-section{
+		display: flex;
+		flex-direction: row-reverse;
+		background:linear-gradient(#7F8C8D,#000);
+		height: 100vh;
+		
+	}
+	#navbar-style{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content:space-around;
+		margin: 0;
+	}
+	nav{
+		width: 100%;
+
+	}
+	.navbar-btn{
+		width: 30%;
+		height:100vh;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.navbar-btn a:hover{
+		
+		border-bottom: 4px solid white;
+		padding-bottom: 2%;
+		color: black;
+		
+	}
+	.home-button a:hover{
+		padding-bottom: 2%;
+		color: black;
+		font-size: 25px;
+
+	}
+	.here-button{
+		color:white;
+	}
+	.here-button a:hover{
+		font-size: 3em;
+	}
+	.icons-set-viewall-border a:hover{
+		
+		color: black;
+		margin: 3%;
+		padding: 3%;
+
+		
+	}
+
+	.navbar-text{	
+		color: white;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+	}
+
+
+
+	#welcome-section{
+		background: #22b39f ;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		height: 100vh;
+		text-align: center;
+		color:#7a871b;
+	}
+	.welcome-section-text{
+		margin:30vh;
+		color: white;
+	}
+	#project-section{
+		
+		background:  #d6b231;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		height: 160vh;
+	}
+	
+	#project-section-text{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		font-size: 1.5em;
+		
+	}
+	#project-section-icons{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	#icons-set{
+		width: 30%;
+		display: flex;
+		flex-direction: column;
+		text-decoration: none;
+		list-style: none;
+		margin: 3%;
+		margin-right: 0
+
+	}
+
+	#icons-set:hover{
+		transform:scale(1.1); 
+		transition: 0.7s;
+		
+
+
+	}
+	#icons-set-viewall{
+		width: 28%;
+		margin-left: 36%;
+		margin-right: 36%;
+		margin-bottom: 0;
+		margin-top: -1em;
+		
+	}
+	.icons-set-viewall-border{
+		text-align: center;
+		border-bottom: 1px solid white;	
+		margin: 3%;
+		padding: 3%;
+
+
+	}
+	.icons{
+		width: 100%;
+		
+	}
+	.icons-text{
+		text-align: center;
+		color:white;
+		margin: 0;
+	}
+	.border{
+		border:5px solid gray;
+	}
+
+	.icon-border{
+		border:6px solid gray;
+		background: #555a61;
+		border-radius: 4%;
+	}
+	
+	a{
+		text-decoration:none;
+	}
+	#contact-section{
+		height: 125vh;
+		background: #844257;
+		font-size: 1em;
+		display: flex;
+		flex-direction: column;
+		
+		
+	}
+	#contact-icons{
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-right:10%; 
+		margin-left:10%;
+		flex: wrap;
+		border-bottom: 10px solid black;
+
+	}
+	#contact-icons-set:hover{
+		transform:scale(2); 
+		transition: 0;
+
+	}
+	#contact-icons-set{
+		width:20%;
+		margin:3%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.contact-icons-text{
+		font-size: 0.7em;
+		text-align: center;
+		color:white;
+	}
+	.contact-icons-border{
+		
+	}
+	#contacts-heading{
+		font-family: 'Fira Sans', sans-serif;
+		font-size: 5em;
+		text-align: center;
+		margin-left:20%; 
+		margin-right:20%;
+		width: 60%;
+	}
+	
+	.icons-size{}
+	.contacts-heading{
+		font-size: 2em;
+		text-align: center;
+		margin-bottom: 2%;
+	}
+	#conhome{
+		color: black;
+	}
+	#conhome:hover{
+		color: white;
+	}
+</style>
+
+
+<body>
+	<div id="portfolio-main">
+		<div id="navbar-section">
+			<nav>
+				<ul id="navbar-style">
+				<li class="navbar-btn"><a class="navbar-text" href="#contact-section">CONTACT ME</a>
+				</li>
+				<li class="navbar-btn"><a class="navbar-text"href="#project-section">WORKED ON</a>
+				</li>
+				<li class="navbar-btn"><a class="navbar-text"href="pages/edu.html">EDUCATION</a>
+				</li>
+				<li class="navbar-btn"><a class="navbar-text"href="#welcome-section">ABOUT ME</a>
+				</li>
+				<li class="navbar-btn"><a class="navbar-text"href="#">HOME</a>
+				</li>
+				</ul>
+			</nav>
+		</div>
+		<div id="welcome-section">
+			<div class="welcome-section-text">
+			<h1 style="border-bottom:3px solid white;" >
+				Hey I am Mayur Shankar
+			</h1>
+			<p style="color: #464f4d;">Currently Under-graduate in B.tech(Electronics and communication),MNIT Jaipur(3rd year).I like to work on embedded projects.
+			</p>
+			<p style="color: #464f4d;"></p>
+			<p style="color: #464f4d;">I also have a good command on FE web-developement and have worked on libraries like node.js,angular.js</p>
+			<p style="color: #464f4d;">You can click <a style="color: red;" href="pages/skill.html">HERE</a> to know more about my Skills.</p>
+			<ul>
+			<li class="home-button"><a style="color: black;" href="#navbar-section"><i style="align-items: center;" class="fa fa-home fa-sm" aria-hidden="true"></i> HOME</a>
+				</li>
+				
+				</li>
+				</ul>
+			</div>
+		</div>
+		<div id="project-section">
+			<div id="project-section-text">
+			<h3 style="color: #555a61">These Are some of Mine/Worked-on Projects:</h3>
+			<p style="color: white" >projects not solely mine are credited in the works with ad.</p>
+			</div>
+			<div id="project-section-icons">
+				<ul id="icons-set">
+					<a href="https://codepen.io/Mayur98/pen/ydxRYw">
+					<li class="icon-border"><img class="icons" src="img/floww.png">
+					<p class="icons-text">Flow field using js [ad]</p></a>
+				</li>
+				</ul>
+				
+				<ul id="icons-set">
+					<a href="https://github.com/Mayur8991/PyGame-slither"><li class="icon-border"><img class="icons" src="img/slither.png">
+					<p class="icons-text">PyGame(Snake) [ad]</p></a>
+				</li>
+				</ul>
+				<ul id="icons-set">
+					<a href="https://github.com/Mayur8991/PyGame-cookie-shooter">
+					<li class="icon-border"><img class="icons" src="img/cookie.png">
+					<p class="icons-text">Cookie-shooter</p></a>
+				</li>
+				</ul>
+				
+				<ul id="icons-set">
+					<a href="https://github.com/Mayur8991/LIFI">
+					<li class="icon-border"><img class="icons"  src="img/liffii.jpg">
+					<p class="icons-text">Lifi using arduino uno</p></a>
+				</li>
+				</ul>
+				<ul id="icons-set">
+					<a href="https://codepen.io/Mayur98/pen/agLexx"><li class="icon-border"><img class="icons" src="img/sardaar.jfif">
+					<p class="icons-text">Page on Sardar</p></a>
+				</li>
+				</ul>
+				<ul id="icons-set">
+					<a href="https://github.com/Mayur8991/Pygame-Tanks">
+					<li class="icon-border"><img class="icons" src="img/logoo.png">
+					<p class="icons-text">Pygame(tanks) [ad]</p></a>
+				</li>
+				</ul>
+				
+				
+				</ul>
+				<ul id="icons-set-viewall">
+					<li class="icons-set-viewall-border"><a class="icons-text" href="https://codepen.io"> VIEW ALL</a></li>
+					
+					<li class="icons-set-viewall-border"><a class="icons-text" href="#navbar-section">HOME</a></li>
+				</li>
+				</ul>
+			</div>
+		</div>
+		<div id="contact-section">
+			<h5 style="margin-bottom: 1.5em;margin-top: 0.3em;" id="contacts-heading"><b>Why Not Get in Touch!</b></h5>
+			<h4 style="margin-top: 0; margin-bottom: 0.4em;" id="contacts-heading">Contact Me:</h4>
+			<div id="contact-icons">
+				<ul id="contact-icons-set">
+					<li class="contact-icon-border">
+						<a style="color: black;" href="#">
+						<li class="contact-icon-border"><i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+						<br>Phone</a>
+
+				</li>
+				</ul>
+				<ul id="contact-icons-set">
+					<a style="color: black;" href="#"><li class="contact-icon-border"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i><br>E-mail</a>
+					
+
+				</li>
+				</ul>
+				<ul id="contact-icons-set">
+						<a style="color: black;" href="https://github.com/Mayur8991">
+						<li class="contact-icon-border"><i class="fa fa-github fa-3x" aria-hidden="true"></i><br>github</a>
+
+				</li>
+				</ul>
+				<ul id="contact-icons-set">
+					<li class="contact-icon-border">
+						<a style="color: black;text-align: left;" href="https://www.linkedin.com/in/mayurh-shankar-718141170/"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+						<br>Linkedin</a>
+					
+				</li>
+				</ul>
+				<ul id="contact-icons-set">
+					<li class="contact-icon-border">
+						<a style="color: black;" href="https://codepen.io/Mayur98/#">
+					<i style="align-items: center;" class="fa fa-codepen fa-3x" aria-hidden="true"></i><br>Codepen</a>			
+				</li>
+				</ul>
+				<ul id="contact-icons-set">
+					<li class="contact-icon-border">
+						<a style="color: black;" href="#navbar-section">
+					<i style="align-items: center;" class="fa fa-home fa-3x" aria-hidden="true"></i><br>BACK</a>			
+				</li>
+				</ul>
+
+			</div>
+			<h3 style="text-align: center; font-size: 1em;">Developed by Mayur Shankar</h3>
+			
+
+			
+		</div>
+		
+
+
+	</div>
+	
+</body>
+</html>
